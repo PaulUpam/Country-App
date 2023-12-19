@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <h1 id="mainTitle">Country App <span id="appUser"></span></h1>
+      <div class="btnMainDiv">
+        <button id="userAppBtn" class="mainBtn">Set App Name</button>
+        <button id="dltAppBtn" class="appDltBtn">Delete App Name</button>
+    </div>
+    </div>
+
+    <div class="container">
+      <div>
+        <input
+          type="text"
+          placeholder="Add Country"
+          id="inputField"
+          onkeypress="KeyPress(event)"
+        />
+        <button class="btn" onclick="userClick()">Add Country</button>
+
+        <h2>Country List</h2>
+        <ul id="countries"></ul>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="./localstorage.js"></script>
+  </body>
+</html>
